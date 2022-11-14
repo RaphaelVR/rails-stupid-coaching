@@ -1,0 +1,7 @@
+    <% if params[:ask] == 'I am going to work' %>
+      <h1> 'Great!' </h1>
+  <% elsif params[:ask].include?('?') %>
+     <h1> 'Silly question, get dressed and go to work!' </h1>
+   <% else%>
+      <h1> "I don't care, get dressed and go to work!" </h1>
+    <% end %>
